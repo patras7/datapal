@@ -1,0 +1,337 @@
+---
+mappings:
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/ontology/ndc"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.e2ce6963-726f-4aba-ad4d-df032ba1fbb9"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_action_types_lookup"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.e31a6688-a69a-4916-b10c-ab6d8d3e21a6"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_application_docs"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.fdb762e6-07be-4aec-ad73-9fed9c652c5e"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_applications"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.407de8a6-a7df-4f5b-b355-91b3f653c88e"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_applications_docs_type_lookup"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.db882192-928a-4705-9920-c31ce53d3e0c"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_marketing_status"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.660ea827-8229-4828-83f9-e77dc7522d88"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_marketing_status_lookup"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.6818ca85-7ff2-49b6-89bc-75263e56083b"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_products"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.5991ed85-0490-4f39-b045-6358da30e4bb"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_submission_class_lookup"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.61a47139-d52e-428d-a3bf-d0f205fc7943"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_submission_property_type"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.34573370-b068-499f-a97b-5c6bc3da0460"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_submissions"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.b584c2d4-ae65-4b88-aac3-5d51cee1326d"
+- alias: "/Cardinal Health/ph-core-ontology-sap/data/transform/fda_drug_te"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.3f0a1478-d510-4fa1-a4cd-fcdcf4449dc0"
+- alias: "ri.foundry.main.dataset.02f73f93-36e2-49ae-9071-592ebb139573"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.02f73f93-36e2-49ae-9071-592ebb139573"
+- alias: "ri.foundry.main.dataset.068dd3b5-6835-4595-ae74-e2fc0b833d8a"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.068dd3b5-6835-4595-ae74-e2fc0b833d8a"
+- alias: "ri.foundry.main.dataset.0bd653f4-fab4-447e-9b4d-d39ddf8d1f6b"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.0bd653f4-fab4-447e-9b4d-d39ddf8d1f6b"
+- alias: "ri.foundry.main.dataset.0c6ae379-81f7-4385-b251-aa56bf65e126"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.0c6ae379-81f7-4385-b251-aa56bf65e126"
+- alias: "ri.foundry.main.dataset.1559cda9-175c-4853-afe8-6b087f46f39e"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.1559cda9-175c-4853-afe8-6b087f46f39e"
+- alias: "ri.foundry.main.dataset.195cfffd-a789-4cd9-b671-2d2c78587f44"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.195cfffd-a789-4cd9-b671-2d2c78587f44"
+- alias: "ri.foundry.main.dataset.1b3a46f2-8c30-4c50-a15d-ebb6945a1e72"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.1b3a46f2-8c30-4c50-a15d-ebb6945a1e72"
+- alias: "ri.foundry.main.dataset.1d6e6fde-1ae9-4f3b-b9d0-25785157aebf"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.1d6e6fde-1ae9-4f3b-b9d0-25785157aebf"
+- alias: "ri.foundry.main.dataset.23199d7d-2dad-41b6-aa13-f40e884bb16d"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.23199d7d-2dad-41b6-aa13-f40e884bb16d"
+- alias: "ri.foundry.main.dataset.258da961-33eb-4c78-ac0d-f0a6b0e0d117"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.258da961-33eb-4c78-ac0d-f0a6b0e0d117"
+- alias: "ri.foundry.main.dataset.2e63a301-4736-403d-a3ae-d001b01d5052"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.2e63a301-4736-403d-a3ae-d001b01d5052"
+- alias: "ri.foundry.main.dataset.315f272c-1d47-49f2-ba00-27474ae7b700"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.315f272c-1d47-49f2-ba00-27474ae7b700"
+- alias: "ri.foundry.main.dataset.34e811fd-c8f6-44fd-b4b9-8b2b9bb069e4"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.34e811fd-c8f6-44fd-b4b9-8b2b9bb069e4"
+- alias: "ri.foundry.main.dataset.3c735c21-498b-4e63-91a5-b652868d35dd"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.3c735c21-498b-4e63-91a5-b652868d35dd"
+- alias: "ri.foundry.main.dataset.3fdd6cbc-305b-446b-8873-a8e2db8c5655"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.3fdd6cbc-305b-446b-8873-a8e2db8c5655"
+- alias: "ri.foundry.main.dataset.49f2aeb5-1143-4620-8459-0eabc4b83692"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.49f2aeb5-1143-4620-8459-0eabc4b83692"
+- alias: "ri.foundry.main.dataset.4b1945c3-b9d6-4073-b15d-676b97260b8c"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.4b1945c3-b9d6-4073-b15d-676b97260b8c"
+- alias: "ri.foundry.main.dataset.4c423eb4-f7bc-4e9b-84d1-c9f1a19d5d09"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.4c423eb4-f7bc-4e9b-84d1-c9f1a19d5d09"
+- alias: "ri.foundry.main.dataset.4ea0fec4-e5c8-4bd0-9257-173ccdbda9ec"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.4ea0fec4-e5c8-4bd0-9257-173ccdbda9ec"
+- alias: "ri.foundry.main.dataset.6051decb-362e-4c58-9318-bb61c14fd4e2"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.6051decb-362e-4c58-9318-bb61c14fd4e2"
+- alias: "ri.foundry.main.dataset.73749345-3f8e-493a-8f04-01c6ca5f0851"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.73749345-3f8e-493a-8f04-01c6ca5f0851"
+- alias: "ri.foundry.main.dataset.743f1ee3-2655-4683-a619-8554d64355dd"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.743f1ee3-2655-4683-a619-8554d64355dd"
+- alias: "ri.foundry.main.dataset.77906277-99d0-42cb-b1f3-fcbb0eba6415"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.77906277-99d0-42cb-b1f3-fcbb0eba6415"
+- alias: "ri.foundry.main.dataset.78905dc3-ec76-4ca1-b497-cb2f8a02ba03"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.78905dc3-ec76-4ca1-b497-cb2f8a02ba03"
+- alias: "ri.foundry.main.dataset.83b52f9d-3f93-4264-bb68-bcbbb771cfeb"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.83b52f9d-3f93-4264-bb68-bcbbb771cfeb"
+- alias: "ri.foundry.main.dataset.8d7d861f-1c62-4802-97fa-0c96b90d3bc3"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.8d7d861f-1c62-4802-97fa-0c96b90d3bc3"
+- alias: "ri.foundry.main.dataset.965b7a77-29fe-4071-97aa-582f2d183df8"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.965b7a77-29fe-4071-97aa-582f2d183df8"
+- alias: "ri.foundry.main.dataset.991c0bd0-7287-4de1-8791-b35ad579d224"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.991c0bd0-7287-4de1-8791-b35ad579d224"
+- alias: "ri.foundry.main.dataset.9d75b88e-db81-44e3-9772-51d73994b54b"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.9d75b88e-db81-44e3-9772-51d73994b54b"
+- alias: "ri.foundry.main.dataset.9f2a148c-62dc-45eb-ac67-9cc5c0c0a353"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.9f2a148c-62dc-45eb-ac67-9cc5c0c0a353"
+- alias: "ri.foundry.main.dataset.a4b83191-02ef-4468-98c5-fb098a03cab8"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.a4b83191-02ef-4468-98c5-fb098a03cab8"
+- alias: "ri.foundry.main.dataset.a536ec0b-96f9-478b-ac94-fc9214cd2a98"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.a536ec0b-96f9-478b-ac94-fc9214cd2a98"
+- alias: "ri.foundry.main.dataset.a924b066-b68a-434b-a539-5494a4f72f18"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.a924b066-b68a-434b-a539-5494a4f72f18"
+- alias: "ri.foundry.main.dataset.ac2cd031-f630-4a51-b9ea-4baecc4278a1"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.ac2cd031-f630-4a51-b9ea-4baecc4278a1"
+- alias: "ri.foundry.main.dataset.b1405cce-3ce8-47d4-a5d0-4b02661ff794"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.b1405cce-3ce8-47d4-a5d0-4b02661ff794"
+- alias: "ri.foundry.main.dataset.b1600f93-a9e4-4ef1-b2c2-e63d2207edee"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.b1600f93-a9e4-4ef1-b2c2-e63d2207edee"
+- alias: "ri.foundry.main.dataset.b9b31e14-4754-476d-9a3e-20a6b5c9962b"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.b9b31e14-4754-476d-9a3e-20a6b5c9962b"
+- alias: "ri.foundry.main.dataset.c6470791-b7e5-483b-b010-8d4e79458f19"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.c6470791-b7e5-483b-b010-8d4e79458f19"
+- alias: "ri.foundry.main.dataset.c961e7a0-5e7c-4668-a556-8f8befc21b8d"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.c961e7a0-5e7c-4668-a556-8f8befc21b8d"
+- alias: "ri.foundry.main.dataset.c9e4cf3b-7422-481e-b0fd-39c76bb1b8b8"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.c9e4cf3b-7422-481e-b0fd-39c76bb1b8b8"
+- alias: "ri.foundry.main.dataset.d1c9e450-487f-4c26-8717-379311b4bbe3"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.d1c9e450-487f-4c26-8717-379311b4bbe3"
+- alias: "ri.foundry.main.dataset.d25c665a-eefa-4ee9-8d9f-1efb3158ee76"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.d25c665a-eefa-4ee9-8d9f-1efb3158ee76"
+- alias: "ri.foundry.main.dataset.e44f3037-9e35-40bc-8ead-dd5cabd81d3d"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.e44f3037-9e35-40bc-8ead-dd5cabd81d3d"
+- alias: "ri.foundry.main.dataset.ef45e3c5-4321-4bcd-9199-281cb1d13b06"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.ef45e3c5-4321-4bcd-9199-281cb1d13b06"
+- alias: "ri.foundry.main.dataset.f17c2ffd-f444-4691-a43c-ca87b008b644"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.f17c2ffd-f444-4691-a43c-ca87b008b644"
+- alias: "ri.foundry.main.dataset.f1ac3cdb-8210-4ca9-b89c-a04db0a47627"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.f1ac3cdb-8210-4ca9-b89c-a04db0a47627"
+- alias: "ri.foundry.main.dataset.f462b9db-a440-4bcc-9fd1-23e355d5106e"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.f462b9db-a440-4bcc-9fd1-23e355d5106e"
+- alias: "ri.foundry.main.dataset.f639e8e1-f6f3-4e4a-9cb1-998692be2e9e"
+  modes:
+  - "BUILD"
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.f639e8e1-f6f3-4e4a-9cb1-998692be2e9e"
+- alias: "ri.foundry.main.dataset.f66a2392-be40-483b-977a-e048b660413a"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.f66a2392-be40-483b-977a-e048b660413a"
+- alias: "ri.foundry.main.dataset.f8b47cfb-447c-4ae5-b78b-6dc383c4367e"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.f8b47cfb-447c-4ae5-b78b-6dc383c4367e"
+- alias: "ri.foundry.main.dataset.f9fc0c0d-a98f-4cee-b5af-5b9c29110118"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.f9fc0c0d-a98f-4cee-b5af-5b9c29110118"
+- alias: "ri.foundry.main.dataset.fc385255-6db6-4567-9052-5a8dea6881d7"
+  modes:
+  - "READ"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.fc385255-6db6-4567-9052-5a8dea6881d7"
+- alias: "ri.foundry.main.dataset.fe51af4c-3c10-492d-950b-249b35abd3b8"
+  modes:
+  - "BUILD"
+  path: "/deprecated-field"
+  rid: "ri.foundry.main.dataset.fe51af4c-3c10-492d-950b-249b35abd3b8"
