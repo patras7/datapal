@@ -1,0 +1,475 @@
+# projectName: Bellhop for SCO Builder Elements
+# sourceType: SAP_ERP
+# sourceConfigFileNames:
+#   - SourceConfig_ri.magritte..source.f075e006-5731-4524-811f-1307184eaa68_direct_.config-v1.yaml
+# outputFolder: /dev/SDDI Integration Blocks/Magritte + Bellhop/Bellhop/output
+# workflows:
+#   _test_workflow: {}
+# tables:
+#   ADRC:
+#     displayName: Addresses (Business Address Services)
+#     types:
+#       - OBJECT
+#   ADRP:
+#     displayName: Persons (Business Address Services)
+#     types:
+#       - OBJECT
+#   AFKO:
+#     displayName: Order Header Data PP Orders
+#     types:
+#       - OBJECT
+#   AFPO:
+#     displayName: Order item
+#     types:
+#       - OBJECT
+#   AFVC:
+#     displayName: Operation within an order
+#     types:
+#       - OBJECT
+#   AFVV:
+#     displayName: DB structure of the quantities/dates/values in the operation
+#     types:
+#       - OBJECT
+#   AUFK:
+#     displayName: Order master data
+#     types:
+#       - OBJECT
+#   AUSP:
+#     displayName: Characteristic Values
+#     types:
+#       - OBJECT
+#   BKPF:
+#     displayName: Accounting Document Header
+#     types:
+#       - OBJECT
+#   BSEG:
+#     displayName: Accounting Document Segment
+#     types:
+#       - OBJECT
+#   CABNT:
+#     displayName: Characteristic Descriptions
+#     types:
+#       - CUSTOMIZATION
+#   CAWN:
+#     displayName: Characteristic values
+#     types:
+#       - OBJECT
+#   CAWNT:
+#     displayName: Value Texts
+#     types:
+#       - OBJECT
+#   CDHDR:
+#     displayName: Change document header
+#     types:
+#       - OBJECT
+#   CDPOS:
+#     displayName: Change document items
+#     types:
+#       - OBJECT
+#   CRHD:
+#     displayName: Work Center Header
+#     types:
+#       - OBJECT
+#   DD02L:
+#     displayName: SAP Tables
+#     types:
+#       - METADATA
+#       - OBJECT
+#   DD02T:
+#     displayName: 'SAP DD: SAP Table Texts'
+#     types:
+#       - METADATA
+#       - OBJECT
+#   DD03L:
+#     displayName: Table Fields
+#     types:
+#       - METADATA
+#       - OBJECT
+#   DD04T:
+#     displayName: 'R-3 DD: Data element texts'
+#     types:
+#       - METADATA
+#       - OBJECT
+#   DD05S:
+#     displayName: Foreign key fields
+#     types:
+#       - METADATA
+#       - OBJECT
+#   DD08L:
+#     displayName: 'R-3 DD: relationship definitions'
+#     types:
+#       - METADATA
+#       - OBJECT
+#   EBAN:
+#     displayName: Purchase Requisition
+#     types:
+#       - OBJECT
+#   EINA:
+#     displayName: 'Purchasing Info Record: General Data'
+#     types:
+#       - OBJECT
+#   EINE:
+#     displayName: 'Purchasing Info Record: Purchasing Organization Data'
+#     types:
+#       - OBJECT
+#   EKBE:
+#     displayName: History per Purchasing Document
+#     types:
+#       - OBJECT
+#   EKES:
+#     displayName: Vendor Confirmations
+#     types:
+#       - OBJECT
+#   EKET:
+#     displayName: Scheduling Agreement Schedule Lines
+#     types:
+#       - OBJECT
+#   EKKO:
+#     displayName: Purchasing Document Header
+#     types:
+#       - OBJECT
+#   EKPO:
+#     displayName: Purchasing Document Item
+#     types:
+#       - OBJECT
+#   ENLFDIR:
+#     displayName: Additional Attributes for Function Modules
+#     types:
+#       - OBJECT
+#   FUNCT:
+#     displayName: Function Module Short Texts
+#     types:
+#       - OBJECT
+#   FUPARAREF:
+#     displayName: Parameters of function modules
+#     types:
+#       - OBJECT
+#   FUPARAREF_ENHA:
+#     displayName: Parameters of function modules
+#     types:
+#       - OBJECT
+#   GLT0:
+#     displayName: G/L account master record transaction figures
+#     types:
+#       - OBJECT
+#   JEST:
+#     displayName: Individual Object Status
+#     types:
+#       - OBJECT
+#   KNA1:
+#     displayName: General Data in Customer Master
+#     types:
+#       - OBJECT
+#   LFA1:
+#     displayName: Vendor Master (General Section)
+#     types:
+#       - OBJECT
+#   LIKP:
+#     displayName: 'SD Document: Delivery Header Data'
+#     types:
+#       - OBJECT
+#   LIPS:
+#     displayName: 'SD Document: Delivery Item Data'
+#     types:
+#       - OBJECT
+#   LTAK:
+#     displayName: WM transfer order header
+#     types:
+#       - OBJECT
+#   LTAP:
+#     displayName: Transfer order item
+#     types:
+#       - OBJECT
+#   MAKT:
+#     displayName: Material Descriptions
+#     types:
+#       - CUSTOMIZATION
+#   MARA:
+#     displayName: General Material Data
+#     types:
+#       - OBJECT
+#   MARC:
+#     displayName: Plant Data for Material
+#     types:
+#       - OBJECT
+#   MARD:
+#     displayName: Storage Location Data for Material
+#     types:
+#       - OBJECT
+#   MARM:
+#     displayName: Units of Measure for Material
+#     types:
+#       - OBJECT
+#   MAST:
+#     displayName: Material to BOM Link
+#     types:
+#       - OBJECT
+#   MBEW:
+#     displayName: Material Valuation
+#     types:
+#       - OBJECT
+#   MCH1:
+#     displayName: Batches (if Batch Management Cross-Plant)
+#     types:
+#       - OBJECT
+#   MCHA:
+#     displayName: Batches
+#     types:
+#       - OBJECT
+#   MCHB:
+#     displayName: Batch Stocks
+#     types:
+#       - OBJECT
+#   MKOL:
+#     displayName: Special Stocks from Vendor
+#     types:
+#       - OBJECT
+#   MKPF:
+#     displayName: 'Header: Material Document'
+#     types:
+#       - OBJECT
+#   MLGN:
+#     displayName: Material Data for Each Warehouse Number
+#     types:
+#       - OBJECT
+#   MSEG:
+#     displayName: 'Document Segment: Material'
+#     types:
+#       - OBJECT
+#   MSLB:
+#     displayName: Special Stocks with Vendor
+#     types:
+#       - OBJECT
+#   PBED:
+#     displayName: Independent Requirements Data
+#     types:
+#       - OBJECT
+#   PBIM:
+#     displayName: Independent Requirements for Material
+#     types:
+#       - OBJECT
+#   PLAF:
+#     displayName: Planned Order
+#     types:
+#       - OBJECT
+#   PRPS:
+#     displayName: WBS (Work Breakdown Structure) Element Master Data
+#     types:
+#       - OBJECT
+#   QMEL:
+#     displayName: Quality Notification
+#     types:
+#       - OBJECT
+#   RESB:
+#     displayName: Reservation/dependent requirements
+#     types:
+#       - OBJECT
+#   RSFBTYPEIN:
+#     displayName: Possible Type Specifications
+#     types:
+#       - OBJECT
+#   RSFBTYPEIT:
+#     displayName: Text for RSFBTYPEIN
+#     types:
+#       - OBJECT
+#   RSINFDIR:
+#     displayName: Inactive table for TFDIR and ENLFDIR
+#     types:
+#       - OBJECT
+#   SKAT:
+#     displayName: 'G/L Account Master Record (Chart of Accounts: Description)'
+#     types:
+#       - OBJECT
+#   STAS:
+#     displayName: BOMs - Item Selection
+#     types:
+#       - OBJECT
+#   STKO:
+#     displayName: BOM Header
+#     types:
+#       - OBJECT
+#   STPO:
+#     displayName: BOM item
+#     types:
+#       - OBJECT
+#   STXL:
+#     displayName: STXD SAPscript text file lines
+#     types:
+#       - OBJECT
+#   T001:
+#     displayName: Company Codes
+#     types:
+#       - OBJECT
+#   T001K:
+#     displayName: Valuation area
+#     types:
+#       - OBJECT
+#   T001W:
+#     displayName: Plants/Branches
+#     types:
+#       - OBJECT
+#   T006:
+#     displayName: Units of Measurement
+#     types:
+#       - OBJECT
+#   T006A:
+#     displayName: Assign Internal to Language-Dependent Unit
+#     types:
+#       - CUSTOMIZATION
+#   T023T:
+#     displayName: Material Group Descriptions
+#     types:
+#       - OBJECT
+#   T024:
+#     displayName: Purchasing Groups
+#     types:
+#       - OBJECT
+#   T134T:
+#     displayName: Material Type Descriptions
+#     types:
+#       - OBJECT
+#   T156T:
+#     displayName: Movement Type Text
+#     types:
+#       - CUSTOMIZATION
+#   T179:
+#     displayName: 'Materials: Product Hierarchies'
+#     types:
+#       - OBJECT
+#   T179T:
+#     displayName: 'Materials: Product hierarchies: Texts'
+#     types:
+#       - OBJECT
+#   T320:
+#     displayName: Assignment IM Storage Location to WM Warehouse Number
+#     types:
+#       - OBJECT
+#   T418T:
+#     displayName: Item Category Texts
+#     types:
+#       - CUSTOMIZATION
+#   T880:
+#     displayName: Global Company Data (for KONS Ledger)
+#     types:
+#       - OBJECT
+#   TCLA:
+#     displayName: Class Types
+#     types:
+#       - OBJECT
+#   TCURF:
+#     displayName: Conversion Factors
+#     types:
+#       - OBJECT
+#   TCURR:
+#     displayName: Exchange Rates
+#     types:
+#       - OBJECT
+#   TCURV:
+#     displayName: Exchange rate types for currency translation
+#     types:
+#       - OBJECT
+#   TCURX:
+#     displayName: Decimal Places in Currencies
+#     types:
+#       - OBJECT
+#   TFDIR:
+#     displayName: Function Module
+#     types:
+#       - OBJECT
+#   TFKFBM:
+#     displayName: Standard function modules
+#     types:
+#       - OBJECT
+#   TFTIT:
+#     displayName: Function Module Short Text
+#     types:
+#       - OBJECT
+#   TJ02T:
+#     displayName: System status texts
+#     types:
+#       - OBJECT
+#   TLIBG:
+#     displayName: Person responsible for function class
+#     types:
+#       - OBJECT
+#   TLIBT:
+#     displayName: Function Group Short Texts
+#     types:
+#       - OBJECT
+#   TPART:
+#     displayName: 'Business Partner Functions: Texts'
+#     types:
+#       - CUSTOMIZATION
+#   TSPAT:
+#     displayName: 'Organizational Unit: Sales Divisions: Texts'
+#     types:
+#       - CUSTOMIZATION
+#   TTZZ:
+#     displayName: Time zones
+#     types:
+#       - OBJECT
+#   TTZZT:
+#     displayName: Time Zones
+#     types:
+#       - CUSTOMIZATION
+#   TVAPT:
+#     displayName: 'Sales Document Item Categories: Texts'
+#     types:
+#       - CUSTOMIZATION
+#   TVSBT:
+#     displayName: 'Shipping Conditions: Texts'
+#     types:
+#       - CUSTOMIZATION
+#   USR21:
+#     displayName: User Name/Address Key Assignment
+#     types:
+#       - OBJECT
+#   VBAK:
+#     displayName: 'Sales Document: Header Data'
+#     types:
+#       - TRANSACTION
+#   VBAP:
+#     displayName: 'Sales Document: Item Data'
+#     types:
+#       - TRANSACTION
+#   VBBE:
+#     displayName: 'Sales Requirements: Individual Records'
+#     types:
+#       - OBJECT
+#   VBEP:
+#     displayName: 'Sales Document: Schedule Line Data'
+#     types:
+#       - OBJECT
+#   VBFA:
+#     displayName: Sales Document Flow
+#     types:
+#       - OBJECT
+#   VBPA:
+#     displayName: 'Sales Document: Partner'
+#     types:
+#       - OBJECT
+#   VBRK:
+#     displayName: 'Billing Document: Header Data'
+#     types:
+#       - OBJECT
+#   VBRP:
+#     displayName: 'Billing Document: Item Data'
+#     types:
+#       - OBJECT
+#   VBUK:
+#     displayName: 'Sales Document: Header Status and Administrative Data'
+#     types:
+#       - OBJECT
+#   VBUP:
+#     displayName: 'Sales Document: Item Status'
+#     types:
+#       - OBJECT
+#   VTTK:
+#     displayName: Shipment Header
+#     types:
+#       - OBJECT
+#   VTTP:
+#     displayName: Shipment Item
+#     types:
+#       - OBJECT
+# disableRenamedStage: false

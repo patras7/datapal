@@ -1,0 +1,269 @@
+projectName: sddi_pipeline
+sourceType: SAP_ERP
+sourceConfigFileNames:
+  - SourceConfig_ri.magritte..source.ae0afd06-e53a-4881-8137-dc863caab6b3_direct_.config-v1.yaml
+outputFolder: /Cardinal Health/ph-core-transform-sap/sddi_output
+workflows:
+  supply_chain_offerings_v2:
+    variables:
+      - name: convert_decimals_to_doubles
+        value: true
+    enrichments:
+      - sales_document_schedule_line
+      - scheduling_agreements
+      - ship_to_sales_document_partner
+      - unit_strength
+    sparkProfiles:
+      billing_document:
+        - EXECUTOR_MEMORY_LARGE
+        - EXECUTOR_MEMORY_OVERHEAD_LARGE
+        - NUM_EXECUTORS_64
+        - DRIVER_MEMORY_OVERHEAD_EXTRA_LARGE
+        - ADAPTIVE_ENABLED
+        - DRIVER_MEMORY_MEDIUM
+        - DYNAMIC_ALLOCATION_ENABLED
+      sales_document_item:
+        - EXECUTOR_MEMORY_LARGE
+        - EXECUTOR_MEMORY_OVERHEAD_LARGE
+        - NUM_EXECUTORS_64
+        - DRIVER_MEMORY_OVERHEAD_EXTRA_LARGE
+        - ADAPTIVE_ENABLED
+      purchase_order_item:
+        - EXECUTOR_MEMORY_LARGE
+        - EXECUTOR_MEMORY_OVERHEAD_LARGE
+        - NUM_EXECUTORS_64
+        - DRIVER_MEMORY_OVERHEAD_EXTRA_LARGE
+        - ADAPTIVE_ENABLED
+  cogs_v2:
+    variables:
+      - name: convert_decimals_to_doubles
+        value: true
+    enrichments:
+      - buckeye_custom_enrichment
+    sparkProfiles:
+      billing_document:
+        - EXECUTOR_MEMORY_LARGE
+        - EXECUTOR_MEMORY_OVERHEAD_LARGE
+        - NUM_EXECUTORS_64
+        - DRIVER_MEMORY_OVERHEAD_EXTRA_LARGE
+        - ADAPTIVE_ENABLED
+        - DRIVER_MEMORY_MEDIUM
+        - DYNAMIC_ALLOCATION_ENABLED
+  customer_proactive_service_v2:
+    sparkProfiles:
+      delivery_item:
+        - EXECUTOR_MEMORY_LARGE
+        - EXECUTOR_MEMORY_OVERHEAD_LARGE
+        - NUM_EXECUTORS_64
+        - DRIVER_MEMORY_OVERHEAD_EXTRA_LARGE
+        - ADAPTIVE_ENABLED
+tables:
+  /IRM/PCBGC:
+    displayName: PC - Customer Buying Group Assignments
+    types:
+      - OBJECT
+  /IRM/PCBGP:
+    displayName: PC -  Contract Buying Groups Assignment
+    types:
+      - OBJECT
+  /IRM/PCCORG:
+    displayName: Contract Sales Area Definition - Active
+    types:
+      - OBJECT
+  /IRM/PCHDR:
+    displayName: 'PC: Contract Header Data'
+    types:
+      - OBJECT
+  /IRM/PCPRD:
+    displayName: PC - Contract Product Assignment
+    types:
+      - OBJECT
+  /IRM/TPCTYPT:
+    displayName: 'PC :  Contract Type'
+    types:
+      - OBJECT
+  DD02L:
+    displayName: DD02L
+    types:
+      - METADATA
+  DD02T:
+    displayName: DD02T
+    types:
+      - METADATA
+  DD03L:
+    displayName: DD03L
+    types:
+      - METADATA
+  DD04T:
+    displayName: DD04T
+    types:
+      - METADATA
+  DD05S:
+    displayName: DD05S
+    types:
+      - METADATA
+  DD08L:
+    displayName: DD08L
+    types:
+      - METADATA
+  EKET:
+    displayName: Scheduling Agreement Schedule Lines
+    types:
+      - OBJECT
+  EKKO:
+    displayName: Purchasing Document Header
+    types:
+      - OBJECT
+  EKPO:
+    displayName: Purchasing Document Item
+    types:
+      - OBJECT
+  KNA1:
+    displayName: General Data in Customer Master
+    types:
+      - OBJECT
+  KNVP:
+    displayName: Customer Master Partner Functions
+    types:
+      - OBJECT
+  KNVV:
+    displayName: Customer Master Sales Data
+    types:
+      - OBJECT
+  LFA1:
+    displayName: Vendor Master (General Section)
+    types:
+      - OBJECT
+  LIKP:
+    displayName: 'SD Document: Delivery Header Data'
+    types:
+      - OBJECT
+  LIPS:
+    displayName: 'SD Document: Delivery Item Data'
+    types:
+      - OBJECT
+  MAKT:
+    displayName: Material Descriptions
+    types:
+      - CUSTOMIZATION
+  MARA:
+    displayName: General Material Data
+    types:
+      - OBJECT
+  MARC:
+    displayName: Plant Data for Material
+    types:
+      - OBJECT
+  MBEW:
+    displayName: Material Valuation
+    types:
+      - OBJECT
+  T001:
+    displayName: Company Codes
+    types:
+      - OBJECT
+  T001K:
+    displayName: Valuation area
+    types:
+      - OBJECT
+  T001W:
+    displayName: Plants/Branches
+    types:
+      - OBJECT
+  TVFKT:
+    displayName: 'Billing: Document Types: Texts'
+    types:
+      - OBJECT
+  TKUKT:
+    displayName: 'Customers: Customer classification: Texts'
+    types:
+      - OBJECT
+  TVV1T:
+    displayName: 'Customers: Level 3 Class of Trade Descriptions'
+    types:
+      - OBJECT
+  VBAK:
+    displayName: 'Sales Document: Header Data'
+    types:
+      - TRANSACTION
+  VBAP:
+    displayName: 'Sales Document: Item Data'
+    types:
+      - TRANSACTION
+  VBEP:
+    displayName: 'Sales Document: Schedule Line Data'
+    types:
+      - OBJECT
+  VBPA:
+    displayName: 'Sales Document: Partner'
+    types:
+      - OBJECT
+  VBRK:
+    displayName: 'Billing Document: Header Data'
+    types:
+      - OBJECT
+  VBRP:
+    displayName: 'Billing Document: Item Data'
+    types:
+      - OBJECT
+  A682:
+    displayName: 'Sales deal/Part. Role/Customer'
+    types:
+      - OBJECT
+  A685:
+    displayName: 'Sales deal/Driver/Applied To'
+    types:
+      - OBJECT
+  A690:
+    displayName: 'Sales deal/Driver/Flt Dim 1/Flt Dim 2/Flt Dim 3'
+    types:
+      - OBJECT
+  KONP:
+    displayName: 'Conditions (Item)'
+    types:
+      - OBJECT
+  KONA:
+    displayName: 'Agreements'
+    types:
+      - OBJECT
+  KONW:
+    displayName: 'Conditions (1-Dimensional Value Scale)'
+    types:
+      - OBJECT
+  TPAR:
+    displayName: 'Business Partner: Functions'
+    types:
+      - OBJECT
+  YTIRM_FILTHDR:
+    displayName: 'Filter Header'
+    types:
+      - OBJECT
+  /IRM/GPRCRS3:
+    displayName: Condition Record Dimensional Scale
+    types:
+      - OBJECT
+  /IRM/GPRS0082:
+    displayName: CR - Customer Rebates Extension Fields
+    types:
+      - OBJECT  
+  /IRM/IP009RS:
+    displayName: Customer Rebate - General-Calculation Run Subcomponents(Gene
+    types:
+      - OBJECT
+  /IRM/IPCRASP:
+    displayName: Sales Rebate Agreement Header
+    types:
+      - OBJECT
+  /IRM/IPPCRHDR:
+    displayName: Calculation Run Header
+    types:
+      - OBJECT
+  /IRM/IPPCRITM:
+    displayName: Calculation Run Participants
+    types:
+      - OBJECT
+  /IRM/IPCRAPS:
+    displayName: Sales Rebate Postings
+    types:
+      - OBJECT
+disableRenamedStage: false

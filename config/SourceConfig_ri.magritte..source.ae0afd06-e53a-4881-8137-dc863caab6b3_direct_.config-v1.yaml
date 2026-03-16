@@ -1,0 +1,444 @@
+sourceName: QE9_test
+sourceRid: ri.magritte..source.ae0afd06-e53a-4881-8137-dc863caab6b3
+rawFolderStructure:
+  raw: /Cardinal Health/ph-core-transform-sap/raw
+  dataDictionary: /Cardinal Health/ph-core-transform-sap/raw
+sapContext:
+  type: direct
+cleaningLibraries: []
+deploymentSemanticVersion: 8
+metadataSparkProfiles: ["DRIVER_MEMORY_OVERHEAD_LARGE"]
+deduplicationConfig:
+  comparisonColumns:
+    - /PALANTIR/TIMESTAMP
+    - /PALANTIR/ROWNO
+tables:
+  - tableName: /IRM/PCBGC
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-PCBGC
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/PCBGP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-PCBGP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/PCCORG
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-PCCORG
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/PCHDR
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-PCHDR
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/PCPRD
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-PCPRD
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/TPCTYPT
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-TPCTYPT
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: DD02L
+    datasetTransformsConfig:
+      tableCleaningLibraries: []
+      batchUnionComponents: []
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      datasetName: DD02L
+  - tableName: DD02T
+    datasetTransformsConfig:
+      tableCleaningLibraries: []
+      batchUnionComponents: []
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      datasetName: DD02T
+  - tableName: DD03L
+    datasetTransformsConfig:
+      tableCleaningLibraries: []
+      batchUnionComponents: []
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      datasetName: DD03L
+  - tableName: DD04T
+    datasetTransformsConfig:
+      tableCleaningLibraries: []
+      batchUnionComponents: []
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      datasetName: DD04T
+  - tableName: DD05S
+    datasetTransformsConfig:
+      tableCleaningLibraries: []
+      batchUnionComponents: []
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      datasetName: DD05S
+  - tableName: DD08L
+    datasetTransformsConfig:
+      tableCleaningLibraries: []
+      batchUnionComponents: []
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      datasetName: DD08L
+  - tableName: EKET
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/EKET
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: EKKO
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/EKKO
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: EKPO
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/EKPO
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: KNA1
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/KNA1
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: KNVP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/KNVP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: KNVV
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/KNVV
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: LFA1
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/LFA1
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: LIKP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/LIKP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: LIPS
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/LIPS
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: MAKT
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/MAKT
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: MARA
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/MARA
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: MARC
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/MARC
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: MBEW
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/MBEW
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: T001
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/T001
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: T001K
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/T001K
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: T001W
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/T001W
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: TKUKT
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/TKUKT
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: TVFKT
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/TVFKT
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: TVV1T
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/TVV1T
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: VBAK
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/VBAK
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: VBAP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/VBAP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: VBEP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/VBEP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: VBPA
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/VBPA
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+          - DRIVER_MEMORY_MEDIUM
+  - tableName: VBRK
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/VBRK
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: VBRP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/VBRP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - DRIVER_MEMORY_LARGE
+          - NUM_EXECUTORS_64
+          - EXECUTOR_CORES_LARGE
+          - DYNAMIC_ALLOCATION_ENABLED
+  - tableName: A682
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/A682
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: A685
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/A685
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: A690
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/A690
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: KONP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/KONP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: KONA
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/KONA
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: KONW
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/KONW
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: TPAR
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/TPAR
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: YTIRM_FILTHDR
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/YTIRM_FILTHDR
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/GPRCRS3
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-GPRCRS3
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/GPRS0082
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-GPRS0082
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/IP009RS
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-IP009RS
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+      sparkProfiles:
+        profiles:
+          - EXECUTOR_MEMORY_LARGE
+          - EXECUTOR_MEMORY_OVERHEAD_LARGE
+          - NUM_EXECUTORS_64
+  - tableName: /IRM/IPCRASP
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-IPCRASP
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/IPPCRHDR
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-IPPCRHDR
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/IPPCRITM
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-IPPCRITM
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+  - tableName: /IRM/IPCRAPS
+    datasetTransformsConfig:
+      datasetName: EDnA_transformed/IRM-IPCRAPS
+      deduplicationComparisonColumns: []
+      enforeUniquePrimaryKeys: True
+      batchUnionComponents: []
+      tableCleaningLibraries: []
+disableRenamedStage: false

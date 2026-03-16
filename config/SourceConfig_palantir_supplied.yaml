@@ -1,0 +1,766 @@
+# sourceName: IDES
+# sourceRid: ri.magritte..source.f075e006-5731-4524-811f-1307184eaa68
+# sapContext:
+#   type: direct
+# rawFolderStructure:
+#   raw: /dev/SDDI Integration Blocks/Magritte + Bellhop/Bellhop/raw
+# cleaningLibraries:
+#   - convert_all_columns_to_clean_types
+# deploymentSemanticVersion: 7
+# tables:
+#   - tableName: ADRC
+#     datasetTransformsConfig:
+#       datasetName: ADRC
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: ADRP
+#     datasetTransformsConfig:
+#       datasetName: ADRP
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: AFKO
+#     datasetTransformsConfig:
+#       datasetName: AFKO
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: AFPO
+#     datasetTransformsConfig:
+#       datasetName: AFPO
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: AFVC
+#     datasetTransformsConfig:
+#       datasetName: AFVC
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: AFVV
+#     datasetTransformsConfig:
+#       datasetName: AFVV
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: AUFK
+#     datasetTransformsConfig:
+#       datasetName: AUFK
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: AUSP
+#     datasetTransformsConfig:
+#       datasetName: AUSP
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: BKPF
+#     datasetTransformsConfig:
+#       datasetName: BKPF
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: BSEG
+#     datasetTransformsConfig:
+#       datasetName: BSEG
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: CABNT
+#     datasetTransformsConfig:
+#       datasetName: CABNT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: CAWN
+#     datasetTransformsConfig:
+#       datasetName: CAWN
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: CAWNT
+#     datasetTransformsConfig:
+#       datasetName: CAWNT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: CDHDR
+#     datasetTransformsConfig:
+#       datasetName: CDHDR
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: CDPOS
+#     datasetTransformsConfig:
+#       datasetName: CDPOS
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: CRHD
+#     datasetTransformsConfig:
+#       datasetName: CRHD
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: DD02L
+#     datasetTransformsConfig:
+#       datasetName: DD02L
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: DD02T
+#     datasetTransformsConfig:
+#       datasetName: DD02T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: DD03L
+#     datasetTransformsConfig:
+#       datasetName: DD03L
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: DD04T
+#     datasetTransformsConfig:
+#       datasetName: DD04T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: DD05S
+#     datasetTransformsConfig:
+#       datasetName: DD05S
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: DD08L
+#     datasetTransformsConfig:
+#       datasetName: DD08L
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EBAN
+#     datasetTransformsConfig:
+#       datasetName: EBAN
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EINA
+#     datasetTransformsConfig:
+#       datasetName: EINA
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EINE
+#     datasetTransformsConfig:
+#       datasetName: EINE
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EKBE
+#     datasetTransformsConfig:
+#       datasetName: EKBE
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EKES
+#     datasetTransformsConfig:
+#       datasetName: EKES
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EKET
+#     datasetTransformsConfig:
+#       datasetName: EKET
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EKKO
+#     datasetTransformsConfig:
+#       datasetName: EKKO
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: EKPO
+#     datasetTransformsConfig:
+#       datasetName: EKPO
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: ENLFDIR
+#     datasetTransformsConfig:
+#       datasetName: ENLFDIR
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: FUNCT
+#     datasetTransformsConfig:
+#       datasetName: FUNCT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: FUPARAREF
+#     datasetTransformsConfig:
+#       datasetName: FUPARAREF
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: FUPARAREF_ENHA
+#     datasetTransformsConfig:
+#       datasetName: FUPARAREF_ENHA
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: GLT0
+#     datasetTransformsConfig:
+#       datasetName: GLT0
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: JEST
+#     datasetTransformsConfig:
+#       datasetName: JEST
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: KNA1
+#     datasetTransformsConfig:
+#       datasetName: KNA1
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: LFA1
+#     datasetTransformsConfig:
+#       datasetName: LFA1
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: LIKP
+#     datasetTransformsConfig:
+#       datasetName: LIKP
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: LIPS
+#     datasetTransformsConfig:
+#       datasetName: LIPS
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: LTAK
+#     datasetTransformsConfig:
+#       datasetName: LTAK
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: LTAP
+#     datasetTransformsConfig:
+#       datasetName: LTAP
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MAKT
+#     datasetTransformsConfig:
+#       datasetName: MAKT
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MARA
+#     datasetTransformsConfig:
+#       datasetName: MARA
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MARC
+#     datasetTransformsConfig:
+#       datasetName: MARC
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MARD
+#     datasetTransformsConfig:
+#       datasetName: MARD
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MARM
+#     datasetTransformsConfig:
+#       datasetName: MARM
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MAST
+#     datasetTransformsConfig:
+#       datasetName: MAST
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MBEW
+#     datasetTransformsConfig:
+#       datasetName: MBEW
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MCH1
+#     datasetTransformsConfig:
+#       datasetName: MCH1
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MCHA
+#     datasetTransformsConfig:
+#       datasetName: MCHA
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MCHB
+#     datasetTransformsConfig:
+#       datasetName: MCHB
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MKOL
+#     datasetTransformsConfig:
+#       datasetName: MKOL
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MKPF
+#     datasetTransformsConfig:
+#       datasetName: MKPF
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MLGN
+#     datasetTransformsConfig:
+#       datasetName: MLGN
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MSEG
+#     datasetTransformsConfig:
+#       datasetName: MSEG
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: MSLB
+#     datasetTransformsConfig:
+#       datasetName: MSLB
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: PBED
+#     datasetTransformsConfig:
+#       datasetName: PBED
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: PBIM
+#     datasetTransformsConfig:
+#       datasetName: PBIM
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: PLAF
+#     datasetTransformsConfig:
+#       datasetName: PLAF
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: PRPS
+#     datasetTransformsConfig:
+#       datasetName: PRPS
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: QMEL
+#     datasetTransformsConfig:
+#       datasetName: QMEL
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: RESB
+#     datasetTransformsConfig:
+#       datasetName: RESB
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: RSFBTYPEIN
+#     datasetTransformsConfig:
+#       datasetName: RSFBTYPEIN
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: RSFBTYPEIT
+#     datasetTransformsConfig:
+#       datasetName: RSFBTYPEIT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: RSINFDIR
+#     datasetTransformsConfig:
+#       datasetName: RSINFDIR
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: SKAT
+#     datasetTransformsConfig:
+#       datasetName: SKAT
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: STAS
+#     datasetTransformsConfig:
+#       datasetName: STAS
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: STKO
+#     datasetTransformsConfig:
+#       datasetName: STKO
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: STPO
+#     datasetTransformsConfig:
+#       datasetName: STPO
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: STXL
+#     datasetTransformsConfig:
+#       datasetName: STXL
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T001
+#     datasetTransformsConfig:
+#       datasetName: T001
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T001K
+#     datasetTransformsConfig:
+#       datasetName: T001K
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T001W
+#     datasetTransformsConfig:
+#       datasetName: T001W
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T006
+#     datasetTransformsConfig:
+#       datasetName: T006
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T006A
+#     datasetTransformsConfig:
+#       datasetName: T006A
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T023T
+#     datasetTransformsConfig:
+#       datasetName: T023T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T024
+#     datasetTransformsConfig:
+#       datasetName: T024
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T134T
+#     datasetTransformsConfig:
+#       datasetName: T134T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T156T
+#     datasetTransformsConfig:
+#       datasetName: T156T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T179
+#     datasetTransformsConfig:
+#       datasetName: T179
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T179T
+#     datasetTransformsConfig:
+#       datasetName: T179T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T320
+#     datasetTransformsConfig:
+#       datasetName: T320
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T418T
+#     datasetTransformsConfig:
+#       datasetName: T418T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: T880
+#     datasetTransformsConfig:
+#       datasetName: T880
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TCLA
+#     datasetTransformsConfig:
+#       datasetName: TCLA
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TCURF
+#     datasetTransformsConfig:
+#       datasetName: TCURF
+#       batchUnionComponents: []
+#       deduplicationComparisonColumns: []
+#       tableCleaningLibraries: []
+#   - tableName: TCURR
+#     datasetTransformsConfig:
+#       datasetName: TCURR
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TCURV
+#     datasetTransformsConfig:
+#       datasetName: TCURV
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TCURX
+#     datasetTransformsConfig:
+#       datasetName: TCURX
+#       batchUnionComponents: []
+#       deduplicationComparisonColumns: []
+#       tableCleaningLibraries: []
+#   - tableName: TFDIR
+#     datasetTransformsConfig:
+#       datasetName: TFDIR
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TFKFBM
+#     datasetTransformsConfig:
+#       datasetName: TFKFBM
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TFTIT
+#     datasetTransformsConfig:
+#       datasetName: TFTIT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TJ02T
+#     datasetTransformsConfig:
+#       datasetName: TJ02T
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TLIBG
+#     datasetTransformsConfig:
+#       datasetName: TLIBG
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TLIBT
+#     datasetTransformsConfig:
+#       datasetName: TLIBT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TPART
+#     datasetTransformsConfig:
+#       datasetName: TPART
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TSPAT
+#     datasetTransformsConfig:
+#       datasetName: TSPAT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TTZZ
+#     datasetTransformsConfig:
+#       datasetName: TTZZ
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TTZZT
+#     datasetTransformsConfig:
+#       datasetName: TTZZT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TVAPT
+#     datasetTransformsConfig:
+#       datasetName: TVAPT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: TVSBT
+#     datasetTransformsConfig:
+#       datasetName: TVSBT
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: USR21
+#     datasetTransformsConfig:
+#       datasetName: USR21
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBAK
+#     datasetTransformsConfig:
+#       datasetName: VBAK
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBAP
+#     datasetTransformsConfig:
+#       datasetName: VBAP
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBBE
+#     datasetTransformsConfig:
+#       datasetName: VBBE
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBEP
+#     datasetTransformsConfig:
+#       datasetName: VBEP
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBFA
+#     datasetTransformsConfig:
+#       datasetName: VBFA
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBPA
+#     datasetTransformsConfig:
+#       datasetName: VBPA
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBRK
+#     datasetTransformsConfig:
+#       datasetName: VBRK
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBRP
+#     datasetTransformsConfig:
+#       datasetName: VBRP
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBUK
+#     datasetTransformsConfig:
+#       datasetName: VBUK
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VBUP
+#     datasetTransformsConfig:
+#       datasetName: VBUP
+#       deduplicationComparisonColumns: []
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VTTK
+#     datasetTransformsConfig:
+#       datasetName: VTTK
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
+#   - tableName: VTTP
+#     datasetTransformsConfig:
+#       datasetName: VTTP
+#       deduplicationComparisonColumns:
+#         - /PALANTIR/TIMESTAMP
+#         - /PALANTIR/ROWNO
+#       batchUnionComponents: []
+#       tableCleaningLibraries: []
